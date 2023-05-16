@@ -43,4 +43,6 @@ void delete_node(struct list *l, struct node *n);
    Return 1 if val is in the list, 0 otherwise. */
 int check_val(struct list *l, int val);
 
+void printAll(struct list *l);
+
 #endif
