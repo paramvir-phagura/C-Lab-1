@@ -110,7 +110,7 @@ int insert_before(struct list *l, struct node *n, int val) {
     return 1;
 }
 
-/* Delete node n from the list. 
+/* Delete node n from the list.
    The other nodes should remain in their old relative order. */
 void delete_node(struct list *l, struct node *n) {
     //if(!check_node(l,n)) { printf("CHECK NODE FAILED\n\n"); return; }
@@ -137,8 +137,7 @@ int check_val(struct list *l, int val) {
     while (iter != NULL) {
         if (iter->val == val) {
             return 1;
-        }
-        else {
+        } else {
             iter = iter->next;
         }
     }

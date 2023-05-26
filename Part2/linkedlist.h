@@ -2,14 +2,14 @@
 #define LL_H
 
 struct node {
-  int val;
-  struct node *next;
-  struct node *prev;
+    int val;
+    struct node *next;
+    struct node *prev;
 };
 
 struct list {
-  struct node *first;
-  struct node *last;
+    struct node *first;
+    struct node *last;
 };
 
 /* Create an empty list.
@@ -20,11 +20,11 @@ struct list *create_list();
 void delete_list(struct list *l);
 
 /* Insert value in the beginning of a list.
-   Return 0 on failure and 1 on success. */ 
+   Return 0 on failure and 1 on success. */
 int insert_start(struct list *l, int val);
 
 /* Insert value in the end of a list.
-   Return 0 on failure and 1 on success. */ 
+   Return 0 on failure and 1 on success. */
 int insert_end(struct list *l, int val);
 
 /* Create a node with value val and put it in the list after node n.
@@ -35,7 +35,7 @@ int insert_after(struct list *l, struct node *n, int val);
    Return 0 on failure and 1 on success. */
 int insert_before(struct list *l, struct node *n, int val);
 
-/* Delete node n from the list. 
+/* Delete node n from the list.
    The other nodes should remain in their old relative order. */
 void delete_node(struct list *l, struct node *n);
 
